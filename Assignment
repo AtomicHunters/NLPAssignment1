@@ -1,1 +1,24 @@
-//Code to be here
+import math
+from collections import Counter, defaultdict
+
+def lowerCaseAll(words):
+  for i in range(len(words)):
+    words[i] = words[i].lower()
+  return words
+
+def removePunctuation(words):
+  for i in range(len(words) - 1, -1, -1): # loop backwards so we can remove without the iterator getting messed up
+    if words[i] == "." or words[i] == "," or words[i] == "!" or words[i] == "?" or words[i] == ":" or words[i] == ";":
+      words.pop(i)
+  return words
+
+def lowerCaseAll(words):
+  for i in range(len(words)):
+    words[i] = words[i].lower()
+  return words
+
+def removePunctuation(words):
+  for i in range(len(words) - 1, -1, -1): # loop backwards so we can remove without the iterator getting messed up
+    if words[i] == "." or words[i] == "," or words[i] == "!" or words[i] == "?" or words[i] == ":" or words[i] == ";":
+      words.pop(i)
+  return words
